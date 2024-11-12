@@ -1,0 +1,79 @@
+
+/* 탐색 메뉴 스타일 */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: #777;
+}
+
+/* 탐색 버튼을 3행 2열로 배치 */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* 버튼 스타일링 */
+.button-container button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #555;
+}
+
+/* 앨범 섹션 */
+.hotmusic-section, .newmusic-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #404040;
+}
+
+/* 앨범 리스트 */
+.music-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 앨범 아이템 */
+.music-item {
+    width: 150px;
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* 앨범 이미지 */
+.music-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}

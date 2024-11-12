@@ -1,0 +1,54 @@
+
+
+/* 홈 콘텐츠 */
+.home {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 앨범 섹션 */
+.album-section, .recommend-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #404040; /* 섹션 배경을 검은색으로 설정 */
+}
+
+/* 앨범 리스트 */
+.album-list, .recommend-section .album-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* 앨범 아이템 */
+.album-item {
+    width: 150px;
+    text-align: center;
+    background-color: #222; /* 앨범 아이템 배경 */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* 앨범 이미지 */
+.album-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.ad-section {
+    width: calc(100% - 240px); /* 슬라이드바 너비를 제외한 나머지 공간으로 설정 */
+    margin: 20px auto; /* 중앙 정렬 */
+    position: relative; /* 부모 요소에 상대 위치 설정 */
+}
+
+.ad-image {
+    width: 100%; /* 부모 컨테이너 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 이미지가 부모 요소의 높이에 맞게 크기 조정 */
+    object-fit: cover; /* 이미지를 잘라서 부모 요소에 꽉 채움 */
+}

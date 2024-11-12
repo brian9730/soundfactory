@@ -22,4 +22,35 @@ function App() {
   );
 }
 
+
+
+function App() {
+  const [activeComponent, setActiveComponent] = useState('home');
+
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'home':
+        return <Home />;
+      case 'explore':
+        return <Explore />;
+      case 'library':
+        return <Library />;
+      case 'likedMusic':
+        return <LikedMusic />;
+      default:
+        return <Home />;
+    }
+  };
+
+  return (
+      <div className="app">
+        <Sidebar setActiveComponent={setActiveComponent} />
+        <div className="content">
+          {renderComponent()}
+        </div>
+      </div>
+  );
+}
+
 export default App;
+
