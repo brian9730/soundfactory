@@ -67,8 +67,8 @@ function Explore() {
             {/* 인기곡 섹션 */}
             <section className="hotmusic-section">
                 <h2>인기곡</h2>
-                <div className="music-list">
-                    {[...Array(6)].map((_, i) => (
+                <div className="music-list1">
+                    {[...Array(9)].map((_, i) => (
                         <div className="music-item" key={i}>
                             <img src="placeholder.jpg" alt="앨범 이미지" />
                             <p>앨범 제목 {i + 1}</p>
