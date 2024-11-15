@@ -112,12 +112,16 @@ function App() {
         <Router>
             <div className="App">
                 <header className="header">
-                    <input type="text" className="search-bar" placeholder="검색" />
+                    <input type="text" className="search-bar" placeholder="검색"/>
+                    <div className="signin-buttons">
+                        <button className="header-btn">가입하기</button>
+                        <button className="header-btn">로그인 하기</button>
+                    </div>
                 </header>
-                <Sidebar />
+                <Sidebar/>
                 <div className="main-content">
                     <Routes>
-                        <Route path="/home" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
                         <Route path="/explore" element={<Explore />} />
                         <Route path="/library" element={<Library />} />
                         <Route path="/likemusic" element={<LikedMusic />} />
