@@ -97,12 +97,14 @@ function App() {
 export default App;
 */
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Explore from './components/Explore';
 import Library from './components/Library';
 import LikedMusic from './components/LikeMusic';
+import Signup from './components/Signup';
+import Login from './components/Login';
 import TextSection from './components/TextSection'; // 새로 추가
 import Footer from './components/Footer'; // 새로 추가
 import './App.css';
@@ -114,8 +116,12 @@ function App() {
                 <header className="header">
                     <input type="text" className="search-bar" placeholder="검색"/>
                     <div className="signin-buttons">
-                        <button className="header-btn">가입하기</button>
-                        <button className="header-btn">로그인 하기</button>
+                        <Link to="/Signup">
+                            <button className="header-btn">가입하기</button>
+                        </Link>
+                        <Link to="/Login">
+                            <button className="header-btn">로그인 하기</button>
+                        </Link>
                     </div>
                 </header>
                 <Sidebar/>
@@ -125,6 +131,8 @@ function App() {
                         <Route path="/explore" element={<Explore />} />
                         <Route path="/library" element={<Library />} />
                         <Route path="/likemusic" element={<LikedMusic />} />
+                        <Route path="/signup" element={<Signup />} />
+                        <Route path="/login" element={<Login />} />
                         <Route path="/" element={<Home />} />
                     </Routes>
                     <TextSection /> {/* 텍스트 섹션 추가 */}
