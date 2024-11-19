@@ -1,5 +1,5 @@
 import React from 'react';
-//import './TextSection.css'; // 스타일링을 위한 CSS 파일 연결
+
 
 function TextSection() {
     return (

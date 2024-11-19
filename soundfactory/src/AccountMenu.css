@@ -1,0 +1,58 @@
+.account-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.account-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1000;
+}
+
+.menu-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.menu-header p:first-child {
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu-header p:last-child {
+    color: gray;
+    margin: 0;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-dropdown ul li:hover {
+    background-color:#555;
+}

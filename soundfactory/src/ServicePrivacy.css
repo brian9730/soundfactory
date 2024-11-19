@@ -1,0 +1,25 @@
+.service-privacy-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* 흰색 배경 */
+    color: #000000; /* 검은 텍스트 */
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    overflow-y: auto; /* 스크롤 가능 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
