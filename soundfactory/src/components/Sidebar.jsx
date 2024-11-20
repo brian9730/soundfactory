@@ -65,7 +65,7 @@ function Sidebar() {
             <NavLink to="/explore" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>둘러보기</NavLink>
             <NavLink to="/library" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>보관함</NavLink>
             <NavLink to="/likemusic" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>좋아하는 음악</NavLink>
-            <div>설정</div>
+            <div>커뮤니티</div>
             <div>고객센터</div>
             <button>플레이리스트 만들기</button>
         </div>

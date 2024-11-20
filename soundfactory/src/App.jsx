@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import AccountMenu from './components/AccountMenu';
 import Service from './components/Service';
 import Privacy from './components/Privacy';
+import Album from './components/Album'; // Album 컴포넌트 import
 import './App.css';
 
 function AppContent() {
@@ -63,6 +64,7 @@ function AppContent() {
                     />
                     <Route path="/service" element={<Service />} />
                     <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/album" element={<Album />} /> {/* Album 경로 추가 */}
                     <Route path="/" element={<Home />} />
                 </Routes>
                 {!hideComponents && (

@@ -36,7 +36,7 @@ function AccountMenu({ username, setIsLoggedIn, setUsername }) {
                         <li>유료 멤버십</li>
                         <li onClick={handleAccountSwitch}>계정 전환</li>{/* 계정 전환 클릭 시 */}
                         <li onClick={handleLogout}>로그아웃</li>
-                        <li>회원정보 수정</li>
+                        <li onClick={() => navigate('/logup')}>회원정보 수정</li>
                         <li>최근 감상 기록</li>
                         <li onClick={() => navigate('/service')}>서비스 약관</li>
                         <li onClick={() => navigate('/privacy')}>개인정보처리방침</li>

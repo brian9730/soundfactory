@@ -36,6 +36,8 @@ export default Home;
 
 import React from 'react';
 import '../Home.css';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
     return (
@@ -50,11 +52,13 @@ function Home() {
                 <h2>최신 앨범</h2>
                 <div className="album-list">
                     {[...Array(6)].map((_, i) => (
-                        <div className="album-item" key={i}>
-                            <img src="placeholder.jpg" alt="앨범 이미지" />
-                            <p>앨범 제목 {i + 1}</p>
-                            <p>아티스트 {i + 1}</p>
-                        </div>
+                        <Link to="/album" key={i}>
+                            <div className="album-item">
+                                <img src="placeholder.jpg" alt="앨범 이미지" />
+                                <p>앨범 제목 {i + 1}</p>
+                                <p>아티스트 {i + 1}</p>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </section>
@@ -64,18 +68,18 @@ function Home() {
                 <h2>추천 음악</h2>
                 <div className="album-list">
                     {[...Array(6)].map((_, i) => (
-                        <div className="album-item" key={i}>
-                            <img src="placeholder.jpg" alt="추천 앨범 이미지" />
-                            <p>추천 앨범 제목 {i + 1}</p>
-                            <p>추천 아티스트 {i + 1}</p>
-                        </div>
+                        <Link to="/album" key={i}>
+                            <div className="album-item">
+                                <img src="placeholder.jpg" alt="추천 앨범 이미지" />
+                                <p>추천 앨범 제목 {i + 1}</p>
+                                <p>추천 아티스트 {i + 1}</p>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </section>
-
         </div>
     );
 }
-
 
 export default Home;
